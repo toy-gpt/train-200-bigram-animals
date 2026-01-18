@@ -1025,14 +1025,14 @@ wheels = [
 
 [[package]]
 name = "toy-gpt-train-200-bigram"
-version = "0.9.2"
+version = "0.9.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "datafun-toolkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cb/56/70a7793425a5075ad0bddac596ec32756b02efbfb37602bb554a94a117a6/toy_gpt_train_200_bigram-0.9.2.tar.gz", hash = "sha256:36b7f20d35ff207bc87d67e56ac31286c3d72a37bda5bc934e8a5d9bfeb9902d", size = 92576, upload-time = "2026-01-18T02:13:14.486Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6e/b4/1a3f021ba3888ab773eb32fe33a295d8be89c27c39b8843f398df0965f6f/toy_gpt_train_200_bigram-0.9.3.tar.gz", hash = "sha256:870f2c0bf194ece1607661aace641f8069e4a098e986f0d518d92af564caadbb", size = 80830, upload-time = "2026-01-18T20:36:18.411Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ea/5a/62aafd594e721b411f5d0679dbe79c056dd816fc0188658d903642f19ec2/toy_gpt_train_200_bigram-0.9.2-py3-none-any.whl", hash = "sha256:26741e64f8d7c190acdd04260f6f216661dd6050b995955d39ae0b59eeaeee2d", size = 22567, upload-time = "2026-01-18T02:13:12.902Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/0c/ed4679a559b03739a5a72d4a6c258354eb0fa732d30a2900b8e9466f2eaa/toy_gpt_train_200_bigram-0.9.3-py3-none-any.whl", hash = "sha256:340a3d5e03d63e4933dc27bd554a30033523181c182133ce8ba5b06204885f03", size = 22568, upload-time = "2026-01-18T20:36:17.138Z" },
 ]
 
 [[package]]
@@ -1080,7 +1080,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.0.2" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=7.0.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.14.13" },
-    { name = "toy-gpt-train-200-bigram", specifier = ">=0.9.2" },
+    { name = "toy-gpt-train-200-bigram", specifier = ">=0.9.3" },
     { name = "twine", marker = "extra == 'dev'", specifier = ">=6.2.0" },
     { name = "validate-pyproject", marker = "extra == 'dev'", specifier = ">=0.24.1" },
 ]

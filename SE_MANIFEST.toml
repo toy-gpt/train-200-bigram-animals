@@ -28,9 +28,9 @@ architecture = "softmax regression over vocabulary (toy scale)"
 task = "next-token prediction"
 
 [observation]
-corpus_id = "000"
+corpus_id = "001"
 corpus_name = "animals"
-corpus_path = "corpus/000_animals.txt"
+corpus_path = "corpus/001_animals.txt"
 corpus_note = "Deliberately minimal corpus to make the learning loop inspectable."
 
 [artifact]

@@ -15,10 +15,10 @@
   },
   "corpus": {
     "description": "The corpus is tokenized sequential text. Training pairs are derived by sliding a fixed-size context window over the token stream.",
-    "filename": "000_animals.txt",
+    "filename": "001_animals.txt",
     "num_chars": 375,
     "num_lines": 12,
-    "path": "corpus\\000_animals.txt",
+    "path": "corpus\\001_animals.txt",
     "sha256": "628ca9a5a5ad6572b8160cd53b8ff73197703476b81361dad5610288db531d5b"
   },
   "model_kind": "bigram",

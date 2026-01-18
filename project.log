@@ -489,3 +489,139 @@
 2026-01-17 20:54:11 | INFO | IO | Wrote model weights to C:\Users\edaci\Documents\datafun\toy-gpt\train-200-bigram-animals\artifacts\02_model_weights.csv
 2026-01-17 20:54:11 | INFO | IO | Wrote meta to C:\Users\edaci\Documents\datafun\toy-gpt\train-200-bigram-animals\artifacts\00_meta.json
 2026-01-17 20:54:11 | INFO | TRAIN | After training, most likely next token after 'the'|'tabby' is 'cat' (ID: 3).
+2026-01-18 17:30:23 | INFO | TOKEN | === RUN START ===
+2026-01-18 17:30:23 | INFO | TOKEN | project=Tokenizer Demo
+2026-01-18 17:30:23 | INFO | TOKEN | repo_dir=train-200-bigram-animals
+2026-01-18 17:30:23 | INFO | TOKEN | python=3.14.0
+2026-01-18 17:30:23 | INFO | TOKEN | os=Windows 11
+2026-01-18 17:30:23 | INFO | TOKEN | shell=powershell
+2026-01-18 17:30:23 | INFO | TOKEN | cwd=.
+2026-01-18 17:30:23 | INFO | TOKEN | github_actions=False
+2026-01-18 17:30:23 | INFO | TOKEN | Tokenizer initialized with 90 tokens.
+2026-01-18 17:30:23 | INFO | TOKEN | First 10 tokens: ['the', 'tabby', 'cat', 'sat', 'on', 'the', 'mat', 'the', 'tabby', 'cat']
+2026-01-18 17:30:23 | INFO | TOKEN | Total number of tokens: 90
+2026-01-18 17:30:23 | INFO | TOKEN | Average token length: 3.17
+2026-01-18 17:30:25 | INFO | VOCAB | === RUN START ===
+2026-01-18 17:30:25 | INFO | VOCAB | project=Vocabulary Demo
+2026-01-18 17:30:25 | INFO | VOCAB | repo_dir=train-200-bigram-animals
+2026-01-18 17:30:25 | INFO | VOCAB | python=3.14.0
+2026-01-18 17:30:25 | INFO | VOCAB | os=Windows 11
+2026-01-18 17:30:25 | INFO | VOCAB | shell=powershell
+2026-01-18 17:30:25 | INFO | VOCAB | cwd=.
+2026-01-18 17:30:25 | INFO | VOCAB | github_actions=False
+2026-01-18 17:30:25 | INFO | TOKEN | Tokenizer initialized with 90 tokens.
+2026-01-18 17:30:25 | INFO | VOCAB | Vocabulary initialized with 14 unique tokens.
+2026-01-18 17:30:25 | INFO | VOCAB | Vocabulary size: 14
+2026-01-18 17:30:25 | INFO | VOCAB | Sample token: 'the' | ID: 13 | Frequency: 24
+2026-01-18 17:30:29 | INFO | P01 | === RUN START ===
+2026-01-18 17:30:29 | INFO | P01 | project=Simple Next-Token Model Demo
+2026-01-18 17:30:29 | INFO | P01 | repo_dir=train-200-bigram-animals
+2026-01-18 17:30:29 | INFO | P01 | python=3.14.0
+2026-01-18 17:30:30 | INFO | P01 | os=Windows 11
+2026-01-18 17:30:30 | INFO | P01 | shell=powershell
+2026-01-18 17:30:30 | INFO | P01 | cwd=.
+2026-01-18 17:30:30 | INFO | P01 | github_actions=False
+2026-01-18 17:30:30 | INFO | TOKEN | Tokenizer initialized with 90 tokens.
+2026-01-18 17:30:30 | INFO | VOCAB | Vocabulary initialized with 14 unique tokens.
+2026-01-18 17:30:30 | INFO | MODEL | Model initialized with vocabulary size 14 (bigram).
+2026-01-18 17:30:30 | INFO | P01 | Input tokens: 'the' (ID 13), 'tabby' (ID 12)
+2026-01-18 17:30:30 | INFO | P01 | Output probabilities for next token:
+2026-01-18 17:30:30 | INFO | P01 |   'big' (ID 0) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'brown' (ID 1) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'calico' (ID 2) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'cat' (ID 3) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'dog' (ID 4) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'lay' (ID 5) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'mat' (ID 6) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'on' (ID 7) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'red' (ID 8) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'rug' (ID 9) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'sat' (ID 10) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'small' (ID 11) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'tabby' (ID 12) -> 0.0714
+2026-01-18 17:30:30 | INFO | P01 |   'the' (ID 13) -> 0.0714
+2026-01-18 17:30:34 | INFO | TRAIN | === RUN START ===
+2026-01-18 17:30:34 | INFO | TRAIN | project=Training Demo: Next-Token Softmax Regression
+2026-01-18 17:30:34 | INFO | TRAIN | repo_dir=train-200-bigram-animals
+2026-01-18 17:30:34 | INFO | TRAIN | python=3.14.0
+2026-01-18 17:30:34 | INFO | TRAIN | os=Windows 11
+2026-01-18 17:30:34 | INFO | TRAIN | shell=powershell
+2026-01-18 17:30:34 | INFO | TRAIN | cwd=.
+2026-01-18 17:30:34 | INFO | TRAIN | github_actions=False
+2026-01-18 17:30:34 | INFO | TOKEN | Tokenizer initialized with 90 tokens.
+2026-01-18 17:30:34 | INFO | VOCAB | Vocabulary initialized with 14 unique tokens.
+2026-01-18 17:30:34 | INFO | TRAIN | Created 88 training pairs.
+2026-01-18 17:30:34 | INFO | MODEL | Model initialized with vocabulary size 14 (bigram).
+2026-01-18 17:30:34 | INFO | P01 | Epoch 1/50 | avg_loss=2.510215 | accuracy=0.591
+2026-01-18 17:30:34 | INFO | P01 | Epoch 2/50 | avg_loss=2.183152 | accuracy=0.795
+2026-01-18 17:30:34 | INFO | P01 | Epoch 3/50 | avg_loss=1.896545 | accuracy=0.807
+2026-01-18 17:30:34 | INFO | P01 | Epoch 4/50 | avg_loss=1.652746 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 5/50 | avg_loss=1.449502 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 6/50 | avg_loss=1.281658 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 7/50 | avg_loss=1.143276 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 8/50 | avg_loss=1.028945 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 9/50 | avg_loss=0.934174 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 10/50 | avg_loss=0.855333 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 11/50 | avg_loss=0.789483 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 12/50 | avg_loss=0.734235 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 13/50 | avg_loss=0.687642 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 14/50 | avg_loss=0.648124 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 15/50 | avg_loss=0.614400 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 16/50 | avg_loss=0.585437 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 17/50 | avg_loss=0.560401 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 18/50 | avg_loss=0.538621 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 19/50 | avg_loss=0.519556 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 20/50 | avg_loss=0.502767 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 21/50 | avg_loss=0.487898 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 22/50 | avg_loss=0.474657 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 23/50 | avg_loss=0.462807 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 24/50 | avg_loss=0.452151 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 25/50 | avg_loss=0.442525 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 26/50 | avg_loss=0.433794 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 27/50 | avg_loss=0.425844 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 28/50 | avg_loss=0.418579 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 29/50 | avg_loss=0.411916 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 30/50 | avg_loss=0.405787 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 31/50 | avg_loss=0.400132 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 32/50 | avg_loss=0.394901 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 33/50 | avg_loss=0.390048 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 34/50 | avg_loss=0.385535 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 35/50 | avg_loss=0.381329 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 36/50 | avg_loss=0.377401 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 37/50 | avg_loss=0.373724 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 38/50 | avg_loss=0.370277 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 39/50 | avg_loss=0.367038 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 40/50 | avg_loss=0.363991 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 41/50 | avg_loss=0.361118 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 42/50 | avg_loss=0.358406 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 43/50 | avg_loss=0.355842 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 44/50 | avg_loss=0.353415 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 45/50 | avg_loss=0.351114 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 46/50 | avg_loss=0.348930 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 47/50 | avg_loss=0.346854 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 48/50 | avg_loss=0.344879 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 49/50 | avg_loss=0.342998 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | P01 | Epoch 50/50 | avg_loss=0.341204 | accuracy=0.818
+2026-01-18 17:30:34 | INFO | IO | Wrote training log to C:\Users\edaci\Documents\datafun\toy-gpt\train-200-bigram-animals\outputs\train_log.csv
+2026-01-18 17:30:34 | INFO | IO | Wrote vocabulary to C:\Users\edaci\Documents\datafun\toy-gpt\train-200-bigram-animals\artifacts\01_vocabulary.csv
+2026-01-18 17:30:34 | INFO | IO | Wrote model weights to C:\Users\edaci\Documents\datafun\toy-gpt\train-200-bigram-animals\artifacts\02_model_weights.csv
+2026-01-18 17:30:34 | INFO | IO | Wrote meta to C:\Users\edaci\Documents\datafun\toy-gpt\train-200-bigram-animals\artifacts\00_meta.json
+2026-01-18 17:30:34 | INFO | TRAIN | After training, most likely next token after 'the'|'tabby' is 'cat' (ID: 3).
+2026-01-18 17:30:38 | INFO | INFER | === RUN START ===
+2026-01-18 17:30:38 | INFO | INFER | project=Inference Demo: Load Artifacts and Generate Text
+2026-01-18 17:30:38 | INFO | INFER | repo_dir=train-200-bigram-animals
+2026-01-18 17:30:38 | INFO | INFER | python=3.14.0
+2026-01-18 17:30:38 | INFO | INFER | os=Windows 11
+2026-01-18 17:30:38 | INFO | INFER | shell=powershell
+2026-01-18 17:30:38 | INFO | INFER | cwd=.
+2026-01-18 17:30:38 | INFO | INFER | github_actions=False
+2026-01-18 17:30:38 | INFO | MODEL | Model initialized with vocabulary size 14 (bigram).
+2026-01-18 17:30:38 | INFO | INFER | Loaded repo_name=train-200-bigram-animals model_kind=bigram
+2026-01-18 17:30:38 | INFO | INFER | Vocab size: 14
+2026-01-18 17:30:38 | INFO | INFER | Start token: 'big'
+2026-01-18 17:30:38 | INFO | INFER | Top next-token predictions after 'big':
+2026-01-18 17:30:38 | INFO | INFER |   'big' (ID 0): 0.0714
+2026-01-18 17:30:38 | INFO | INFER |   'brown' (ID 1): 0.0714
+2026-01-18 17:30:38 | INFO | INFER |   'calico' (ID 2): 0.0714
+2026-01-18 17:30:38 | INFO | INFER | Generated sequence:
+2026-01-18 17:30:38 | INFO | INFER |   big big big big big big big big big big big

@@ -25,7 +25,7 @@ LOG: logging.Logger = get_logger("TOKEN", level="INFO")
 
 BASE_DIR: Final[Path] = Path(__file__).resolve().parents[2]
 CORPUS_DIR: Final[Path] = BASE_DIR / "corpus"
-DEFAULT_CORPUS_PATH: Final[Path] = CORPUS_DIR / "000_animals.txt"
+DEFAULT_CORPUS_PATH: Final[Path] = CORPUS_DIR / "001_animals.txt"
 
 
 def main() -> None:

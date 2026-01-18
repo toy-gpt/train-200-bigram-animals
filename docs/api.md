@@ -10,7 +10,7 @@ For API documentation, see the reference implementation:
 
 This repository provides:
 
-- **Corpus**: `corpus/000_animals.txt` - structured animal sentences
+- **Corpus**: `corpus/001_animals.txt` - structured animal sentences
 - **Wrappers**: Thin modules that configure paths and run demos
 - **Artifacts**: Pretrained model outputs in `artifacts/`
 
