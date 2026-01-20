@@ -79,7 +79,7 @@ def main() -> None:
             return
         token_ids.append(tok_id)
 
-    # Step 4: Create training pairs (input -> target).
+    # Step 4: Create training pairs (current -> next).
     pairs: list[BigramPair] = make_training_pairs(token_ids)
     LOG.info(f"Created {len(pairs)} training pairs.")
 
