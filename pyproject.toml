@@ -42,7 +42,7 @@ classifiers = [
 dependencies = [
     # REQ.DEPS: External packages used by the project code.
     "datafun-toolkit>=0.9.5",
-    "toy-gpt-train-200-bigram>=0.9.5",
+    "toy-gpt-train-200-bigram>=0.9.6",
 ]
 
 [project.optional-dependencies]
@@ -79,30 +79,14 @@ Repository = "https://github.com/toy-gpt/train-200-bigram-animals"
 
 # === DEPTRY (CHECK FOR UNDECLARED OR UNUSED DEPENDENCIES) ===
 
-[tool.deptry.per_rule_ignores]
-DEP001 = ["toy_gpt_train"]
-DEP002 = [
-    # === DEV TOOLING (not required at runtime) ===
-    "bandit",
-    "deptry",
-    "packaging",
-    "pre-commit",
-    "pytest",
-    "pytest-cov",
-    "pyright",
-    "ruff",
-    "twine",
-    "validate-pyproject",
+[tool.deptry]
+# WHY: Dev and docs dependencies are not imported in source code.
+ignore = ["DEP002"]
 
-    # === DOCUMENTATION TOOLING (not required at runtime) ===
-    "mike",
-    "mkdocs",
-    "mkdocs-material",
-    "mkdocs-static-i18n",
-    "mkdocstrings[python]",
-    "mkdocstrings",         # WHY: Needed for [python] extra (above).
-]
-DEP003 = ["toy_gpt_train"]
+[tool.deptry.per_rule_ignores]
+# CUSTOM: Add self-import package here to avoid false positives.
+DEP001 = ["toy_gpt_train_animals"]
+DEP003 = ["toy_gpt_train_animals"]
 
 # === PYRIGHT (TYPE CHECKING HELPS FIND COMMON ERRORS BEFORE THE CODE RUNS) ===
 
