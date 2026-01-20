@@ -84,7 +84,7 @@ jobs:
       - name: D5) Deploy dev docs via mike
         run: |
           uv run mike deploy --push dev
-          uv run mike set-default --push latest
+          uv run mike set-default --push dev
 
       - name: D6) Show mike versions
         run: uv run mike list
