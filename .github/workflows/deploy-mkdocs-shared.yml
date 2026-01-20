@@ -39,8 +39,10 @@ jobs:
     steps:
       # === ASSEMBLE ===
 
-      - name: A1) Checkout repository code
+      - name: A1) Checkout repository with full history
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0  # WHY: mike needs gh-pages history to push
 
       - name: A2) Install uv (with caching)
         uses: astral-sh/setup-uv@v7
