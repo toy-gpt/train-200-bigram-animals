@@ -3,7 +3,7 @@
 [![Docs](https://img.shields.io/badge/docs-live-blue)](https://toy-gpt.github.io/train-200-bigram-animals/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
 [![CI](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/ci-shared.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/ci-shared.yml)
-[![Deploy-Docs](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/deploy-mkdocs-shared.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/deploy-mkdocs-shared.yml)
+[![Deploy-Docs](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/deploy-docs-shared.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/deploy-docs-shared.yml)
 [![Check Links](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/links.yml/badge.svg)](https://github.com/toy-gpt/train-200-bigram-animals/actions/workflows/links.yml)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/toy-gpt/train-200-bigram-animals/security)
 
