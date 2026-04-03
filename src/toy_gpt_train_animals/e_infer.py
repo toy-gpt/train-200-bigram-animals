@@ -64,7 +64,7 @@ def main() -> None:
     model: SimpleNextTokenModel = SimpleNextTokenModel(vocab_size=v)
     model.weights = load_model_weights_csv(weights_path, vocab_size=v, expected_rows=v)
 
-    args: argparse.Namespace = parse_args()
+    args: argparse.Namespace = parse_args([])
 
     # Choose a start token.
     start_token = args.start_token
