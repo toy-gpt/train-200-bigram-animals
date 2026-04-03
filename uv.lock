@@ -1060,14 +1060,14 @@ wheels = [
 
 [[package]]
 name = "toy-gpt-train-200-bigram"
-version = "0.9.6"
+version = "0.9.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "datafun-toolkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e6/18/1b3a2b245bbc5e59c8f399081a1be94e6d6d5d1dd369e94246db9712ba95/toy_gpt_train_200_bigram-0.9.6.tar.gz", hash = "sha256:7871438e8ffe0cf9d0f82392d20a68a0ab61c849b4255ca2cc0587f8d834dd07", size = 81464, upload-time = "2026-01-20T14:50:01.999Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/1f/96f5f469bbf1ca4cb61b1f554a325a5371bcaaf30950dfc03c6e81a26f04/toy_gpt_train_200_bigram-0.9.8.tar.gz", hash = "sha256:5b034ea8c70f6605b29c37959d2147d66e028f876e5ad2fe052e5c3d293dfa58", size = 83804, upload-time = "2026-04-03T02:53:03.614Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f7/29/23a71f67b9c60780e5e8dd0862bbf011f2c3cbb087a596964ae5ef64a3d5/toy_gpt_train_200_bigram-0.9.6-py3-none-any.whl", hash = "sha256:6715d9e421b4293e4c7e40a7127cd8bc680daf75de2af34a7415e160c9b88027", size = 24275, upload-time = "2026-01-20T14:50:00.846Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/29/2f7e73999215bd5b8fa3dddccb84262f3269f12b932ed0ec56ba67598e1a/toy_gpt_train_200_bigram-0.9.8-py3-none-any.whl", hash = "sha256:d24442cf0e974175a8754e29180d5d3727a6b44dca0105e126effae3f3537fd0", size = 24129, upload-time = "2026-04-03T02:53:01.964Z" },
 ]
 
 [[package]]
