@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Final
 
 from datafun_toolkit.logger import get_logger, log_header
+
 from toy_gpt_train.a_tokenizer import SimpleTokenizer
 
 __all__ = ["SimpleTokenizer", "CORPUS_DIR", "DEFAULT_CORPUS_PATH"]

@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Final
 
 from datafun_toolkit.logger import get_logger, log_header
+
 from toy_gpt_train.c_model import SimpleNextTokenModel
 from toy_gpt_train.e_infer import (
     ArtifactVocabulary,

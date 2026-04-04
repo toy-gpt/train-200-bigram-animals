@@ -20,10 +20,10 @@ Training is handled in a different module.
 import logging
 
 from datafun_toolkit.logger import get_logger, log_header
-from toy_gpt_train.c_model import SimpleNextTokenModel
-
 from toy_gpt_train_animals.a_tokenizer import DEFAULT_CORPUS_PATH, SimpleTokenizer
 from toy_gpt_train_animals.b_vocab import Vocabulary
+
+from toy_gpt_train.c_model import SimpleNextTokenModel
 
 __all__ = ["SimpleNextTokenModel"]
 
