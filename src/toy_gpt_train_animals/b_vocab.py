@@ -15,10 +15,7 @@ required by statistical and neural models.
 import logging
 
 from datafun_toolkit.logger import get_logger, log_header
-
 from toy_gpt_train.b_vocab import Vocabulary
-
-__all__ = ["Vocabulary"]
 
 LOG: logging.Logger = get_logger("VOCAB", level="INFO")
 

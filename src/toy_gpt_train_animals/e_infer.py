@@ -22,8 +22,6 @@ from pathlib import Path
 from typing import Final
 
 from datafun_toolkit.logger import get_logger, log_header
-
-from toy_gpt_train.c_model import SimpleNextTokenModel
 from toy_gpt_train.e_infer import (
     ArtifactVocabulary,
     generate_tokens_bigram,
@@ -34,6 +32,8 @@ from toy_gpt_train.e_infer import (
     top_k,
 )
 from toy_gpt_train.prompts import parse_args
+
+from toy_gpt_train_animals.c_model import SimpleNextTokenModel
 
 JsonScalar = str | int | float | bool | None
 JsonValue = JsonScalar | list["JsonValue"] | dict[str, "JsonValue"]

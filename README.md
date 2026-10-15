@@ -45,7 +45,6 @@ Training logs and evidence are written under `outputs/`
 
 ## Quick start
 
-See `SETUP.md` for full setup and workflow instructions.
 
 Run the full training script:
 
@@ -67,17 +66,9 @@ uv run python src/toy_gpt_train_animals/d_train.py
 uv run python src/toy_gpt_train_animals/e_infer.py
 ```
 
-## Command Reference
+## Developer
 
-The commands below are used in the workflow guide above.
-They are provided here for convenience.
-
-Follow the guide for the **full instructions**.
-
-<details>
-<summary>Show command reference</summary>
-
-### In a machine terminal (open in your `Repos` folder)
+### Clone and Open in VS Code
 
 After you get a copy of this repo in your own GitHub account,
 open a machine terminal in your `Repos` folder:
@@ -90,40 +81,72 @@ cd train-200-bigram-animals
 code .
 ```
 
-### In a VS Code terminal
+### Initialize and Update the Python Environment
+
+With the project open in VS Code, open a VS Code terminal.
+Paste each command and hit Enter or Return after to run it.
 
 ```shell
+uvx pup-clean --delete
 uv self update
 uv python pin 3.14
-uv sync --extra dev --extra docs --upgrade
+uv python install
+uv lock --upgrade
+uv sync
+uv audit
+```
 
-uvx pre-commit install
+### Set Up and Run Git Hooks
+
+Set up and run the git hooks to perform
+basic checks automatically before
+any changes get pushed to GitHub.
+
+In the VS Code terminal,
+paste each command and hit Enter or Return after to run it.
+
+```shell
+uv run prek install --force
+uv run prek update --freeze --cooldown-days 7
+
 git add -A
-uvx pre-commit run --all-files
+uv run prek run --all-files
+# repeat if changes were made
+uv run prek run --all-files
+```
 
-# run Python
+### Run Common Chores
 
-uv run ruff format .
+Run linters, formatters, type checks, tests, and
+build the documentation.
+
+```shell
 uv run ruff check . --fix
-uv run zensical build
+uv run ruff format .
 
+uv run ty check
+uv run python -m pytest
+uv run python -m zensical build
+```
+
+### Git add-commit-push to GitHub
+
+After making useful changes, save your work to GitHub.
+
+```shell
 git add -A
 git commit -m "update"
+# rerun if changes were made
+git add -A
+git commit -m "update"
+
 git push -u origin main
 ```
 
-</details>
-
 ## Provenance and Purpose
-
-The primary corpus used for training is declared in `SE_MANIFEST.toml`.
 
 This repository commits pretrained artifacts so the client can run
 without retraining.
-
-## Annotations
-
-[ANNOTATIONS.md](./ANNOTATIONS.md) - REQ/WHY/OBS annotations used
 
 ## Citation
 
@@ -132,7 +155,3 @@ without retraining.
 ## License
 
 [MIT](./LICENSE)
-
-## SE Manifest
-
-[SE_MANIFEST.toml](./SE_MANIFEST.toml) - project intent, scope, and role

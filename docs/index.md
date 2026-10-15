@@ -6,7 +6,6 @@ illustrating how language models are trained and used.
 ## Navigation
 
 - `README.md` in the repository root for the home page
-- `SE_MANIFEST.toml` for intent, scope, and declared training corpus
 
 ## py.typed (PEP 561)
 
